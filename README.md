@@ -1,10 +1,8 @@
-## Network Security Project Documentation
-
 ## 1. Introduction
 
 This project demonstrates the principles of network security and penetration testing using Kali Linux and Metasploitable. The primary objective is to identify and exploit vulnerabilities in Metasploitable’s network services, implement post-exploitation techniques, and propose mitigation strategies to secure such systems.
 
-# 2. Phase 1: Reconnaissance - Gathering Initial Information
+## 2. Phase 1: Reconnaissance - Gathering Initial Information
 
 #### **Objective:**
 
