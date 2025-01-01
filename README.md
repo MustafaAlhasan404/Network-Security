@@ -147,18 +147,6 @@ Identify open ports, running services, and potential vulnerabilities on the Meta
      ```
    * Analyze the victim’s behavior upon accessing the phishing link.
 
-#### **Option 5: Password Cracking with John the Ripper**
-
-1. **Objective:** Crack hashed passwords retrieved during post-exploitation.
-2. **Steps:**
-   * Save the hashes to a file (e.g., `<span>hashes.txt</span>`).
-   * Run John the Ripper:
-     ```
-     john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
-     ```
-3. **Outcome:**
-   * Recovered plaintext passwords from hashed values.
-
 ## 4. Phase 3: Post-Exploitation - Expanding Access and Persistence
 
 #### **Objective:**
@@ -193,7 +181,7 @@ Explore the target system further, escalate privileges, and gather sensitive inf
      chmod +x /tmp/backdoor.elf
      ```
 
-## 5. Phase 4: Recommendations and Mitigation - Securing the System
+## 5. Phase 4: [ Report ]
 
 #### **Vulnerabilities and Fixes:**
 
@@ -219,7 +207,7 @@ Explore the target system further, escalate privileges, and gather sensitive inf
 * Regularly update and patch systems.
 * Conduct periodic vulnerability assessments.
 
-## 6. Personal Effort: Enhancements to the Project
+## 6. Personal Effort: Enhancements to the Project [ Extra Points ]
 
 ### **1. Automated Workflow with Scripts**
 
@@ -254,7 +242,3 @@ Explore the target system further, escalate privileges, and gather sensitive inf
   * Extracted browser histories and saved passwords.
   * Collected system logs for further analysis.
 * Simulated lateral movement to other virtual machines in the network.
-
-## 7. Conclusion - Lessons Learned and Future Considerations
-
-This project provided hands-on experience in identifying and exploiting network vulnerabilities, post-exploitation techniques, and designing mitigation strategies. The knowledge gained highlights the importance of securing systems against common threats and the value of ethical penetration testing in enhancing cybersecurity defenses.
