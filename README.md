@@ -85,7 +85,7 @@ Identify open ports, running services, and potential vulnerabilities on the Meta
    * Discovered the password: `<span>123456</span>`
    * Gained SSH access as the root user.
 
-#### **Option 3: FTP Exploits**
+#### **Option 2: FTP Exploits**
 
 1. **Objective:** Exploit vulnerabilities in the FTP service.
 2. **Steps:**
@@ -102,7 +102,7 @@ Identify open ports, running services, and potential vulnerabilities on the Meta
 3. **Outcome:**
    * Obtained a reverse shell via the FTP backdoor and used the session to map the file system, exfiltrate sensitive files, and identify further attack vectors.
 
-#### **Option 4: HTTP Exploits**
+#### **Option 3: HTTP Exploits**
 
 1. **Objective:** Exploit vulnerabilities in the web application hosted on HTTP.
 2. **Steps:**
